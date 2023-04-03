@@ -1,6 +1,4 @@
-package tms.karpovich.Lesson3;
-
-import java.util.Scanner;
+package tms.karpovich.lesson3;
 
 public class ThirdLessonClasswork {
     public static void main(String[] args) {
