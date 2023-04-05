@@ -21,11 +21,7 @@ public class FifthHomework {
         int[][] arr = new int[8][8];
         for (int i = 0; i < arr.length; i++){
             for(int j = 0; j < arr[i].length; j++){
-                if((i+j)%2==0){
                     arr[i][j] = random.nextInt(5);
-                } else {
-                    arr[i][j] = random.nextInt(5);
-                }
             }
         }
 //        System.out.println("Unsorted array");
@@ -79,8 +75,8 @@ public class FifthHomework {
 //            System.out.println();
 //        }
         System.out.println();
-        for (int i = 0, j = 0; i < arr.length; i++, j++){
-            System.out.print(arr[i][j] + " ");
+        for (int i = 0; i < arr.length; i++){
+            System.out.print(arr[i][i] + " ");
         }
         System.out.println();
         for (int i = 0, j = arr.length - 1; i < arr.length; i++, j--){
