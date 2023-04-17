@@ -8,16 +8,10 @@ public class Patient {
     }
 
     public void setDoctor(){
-        switch (treatmentPlan.code){
-            case 1:
-                Surgeon.treat();
-                break;
-            case 2:
-                Dentist.treat();
-                break;
-            default:
-                Therapist.treat();
-                break;
+        switch (treatmentPlan.code) {
+            case 1 -> Surgeon.treat();
+            case 2 -> Dentist.treat();
+            default -> Therapist.treat();
         }
     }
 }
