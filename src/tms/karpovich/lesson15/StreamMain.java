@@ -38,7 +38,7 @@ public class StreamMain {
                 .sorted((o1,o2) -> o2.compareTo(o1))
                 .filter(val -> val%2 == 0)
                 .map(x -> x*x)
-                .forEach(x -> System.out.println(x))
-                .reduce((a,b) -> a*b);
+                .forEach(x -> System.out.println(x));
+//                .reduce((a,b) -> a*b);
     }
 }
