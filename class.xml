@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<class>
+    <student rollno = "345">
+    <firstname>dinkar</firstname>
+    <lastname>kad</lastname>
+    <nickname>dinkar</nickname>
+    <marks>85</marks>
+    </student>
+    <student rollno = "347">
+        <firstname>dinkar</firstname>
+        <lastname>kad</lastname>
+        <nickname>dinkar</nickname>
+        <marks>85</marks>
+    </student>
+    <student rollno = "349">
+        <firstname>dinkar</firstname>
+        <lastname>kad</lastname>
+        <nickname>dinkar</nickname>
+        <marks>85</marks>
+    </student>
+</class>
