@@ -1,0 +1,9 @@
+{
+  "name": "pasha",
+  "age": 20,
+  "documents": [
+    "first",
+    "second"
+  ],
+  "is_rich": null
+}
