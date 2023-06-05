@@ -1,9 +1,9 @@
 package tms.karpovich.lesson6;
 
 public class HDD {
-    String name;
-    int memoryCapacity;
-    String type;
+    private String name;
+    private int memoryCapacity;
+    private String type;
     public HDD(){
         name = "Crucial";
         memoryCapacity = 1024;

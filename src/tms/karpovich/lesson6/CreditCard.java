@@ -3,8 +3,8 @@ package tms.karpovich.lesson6;
 import java.util.Random;
 
 public class CreditCard {
-    int accountNumber;
-    int balance;
+    private int accountNumber;
+    private int balance;
 
 
     public CreditCard(){
@@ -19,14 +19,14 @@ public class CreditCard {
         balance += amount;
     }
     public void withdraw(int amount){
-        if (balance > 0) {
+        if (balance > amount) {
             balance -= amount;
         }
         else {
             System.out.println("Not enough money");
         }
     }
-    public String showinfo(){
+    public String showInfo(){
         return "Account Number: " + accountNumber + System.lineSeparator() + "Balance: " + balance;
     }
 }

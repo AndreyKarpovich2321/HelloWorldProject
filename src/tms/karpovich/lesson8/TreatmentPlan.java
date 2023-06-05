@@ -5,6 +5,6 @@ import java.util.Random;
 public class TreatmentPlan {
     int code;
     public TreatmentPlan() {
-        code = new Random().nextInt(4);
+        code = new Random().nextInt(3);
     }
 }

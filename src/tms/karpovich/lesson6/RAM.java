@@ -1,8 +1,8 @@
 package tms.karpovich.lesson6;
 
 public class RAM {
-    String name;
-    int memoryCapacity;
+    private String name;
+    private int memoryCapacity;
     public RAM(){
         name = "Kingston";
         memoryCapacity = 8;

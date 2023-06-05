@@ -8,9 +8,9 @@ public class SixthHomework {
         firstCard.topUp(50);
         secondCard.topUp(150);
         thirdCard.withdraw(100);
-        System.out.println(firstCard.showinfo());
-        System.out.println(secondCard.showinfo());
-        System.out.println(thirdCard.showinfo());
+        System.out.println(firstCard.showInfo());
+        System.out.println(secondCard.showInfo());
+        System.out.println(thirdCard.showInfo());
         Computer firstComputer = new Computer(500, "ASUS", new RAM(), new HDD());
         Computer secondComputer = new Computer(1000, "HP",new RAM("Kingston", 16),new HDD("Samsung", 2048, "Internal"));
         System.out.println(firstComputer);

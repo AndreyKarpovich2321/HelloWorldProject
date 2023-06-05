@@ -1,10 +1,10 @@
 package tms.karpovich.lesson6;
 
 public class Computer {
-    int price;
-    String model;
-    RAM ram;
-    HDD hdd;
+    private int price;
+    private String model;
+    private RAM ram;
+    private HDD hdd;
 
     public Computer(){}
     public Computer(int price, String model){
