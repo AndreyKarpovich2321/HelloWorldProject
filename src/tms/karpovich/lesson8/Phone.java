@@ -4,6 +4,7 @@ public class Phone {
     private String number;
     private String model;
     private int weight;
+    public Phone() {}
     public Phone(String number, String model, int weight) {
         this(number, model);
         this.weight = weight;

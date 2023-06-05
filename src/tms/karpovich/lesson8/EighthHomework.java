@@ -19,11 +19,11 @@ public class EighthHomework {
         firstPhone.showParameters();
         secondPhone.showParameters();
         thirdPhone.showParameters();
-        firstPhone.receiveCall("John ");
+        firstPhone.receiveCall("John");
         System.out.println(firstPhone.getNumber());
-        secondPhone.receiveCall("Andrew ");
+        secondPhone.receiveCall("Andrew");
         System.out.println(secondPhone.getNumber());
-        thirdPhone.receiveCall("Peter ");
+        thirdPhone.receiveCall("Peter");
         System.out.println(thirdPhone.getNumber());
     }
 }
