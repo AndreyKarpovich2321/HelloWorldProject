@@ -38,7 +38,7 @@ public class ToDoListData {
 
     private static void changeStatus(List<ToDoTask> taskList) throws JsonProcessingException {
         System.out.println("Input id");
-        int id = scanner.nextInt();
+        int id = scanner.nextInt() - 1;
         ToDoTask current = taskList.get(id);
         if (current.getStatus().equals("Undone")){
             current.setStatus("Done");
@@ -49,7 +49,7 @@ public class ToDoListData {
     }
     private static void changePriority(List<ToDoTask> taskList) throws JsonProcessingException {
         System.out.println("Input id");
-        int id = scanner.nextInt();
+        int id = scanner.nextInt() - 1;
         ToDoTask current = taskList.get(id);
         System.out.println("Input status: Low / Medium / High");
         String status = scanner.next();
@@ -58,7 +58,7 @@ public class ToDoListData {
     }
     private static void changeDescription(List<ToDoTask> taskList) throws JsonProcessingException {
         System.out.println("Input id");
-        int id = scanner.nextInt();
+        int id = scanner.nextInt() - 1;
         ToDoTask current = taskList.get(id);
         System.out.println("Input new description ");
         String description = scanner.next();
@@ -67,7 +67,7 @@ public class ToDoListData {
     }
     private static void deleteTaskbyId(List<ToDoTask> taskList) throws JsonProcessingException {
         System.out.println("Input id");
-        int id = scanner.nextInt();
+        int id = scanner.nextInt() - 1;
         taskList.remove(id - 1);
         chooseOption(taskList);
     }
@@ -97,5 +97,6 @@ public class ToDoListData {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+        System.out.println("Finished");
     }
 }
