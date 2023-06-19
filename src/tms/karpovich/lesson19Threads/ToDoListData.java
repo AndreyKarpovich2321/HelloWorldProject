@@ -11,14 +11,13 @@ import java.util.Scanner;
 
 public class ToDoListData {
     static Scanner scanner = new Scanner(System.in);
+    static List<ToDoTask> taskList = new ArrayList<>();
     public static void main(String[] args) throws IOException {
 //        List<ToDoTask> taskList = Arrays.asList(new ToDoTask(1, "06-06-2023", "Get Groceries", "High", "Done"),
 //                new ToDoTask(2, "06-06-2023", "Call Mom", "Low", "Done"),
 //                new ToDoTask(3, "06-06-2023", "Get Dentist Appointment", "Medium", "Undone"),
 //                new ToDoTask(4, "06-06-2023", "Pay Bills", "High", "Undone"));
-        List<ToDoTask> taskList = new ArrayList<>();
-        readTasksFromJson(taskList);
-
+        fillTasksFromJson(taskList);
 
     }
 
@@ -71,7 +70,7 @@ public class ToDoListData {
         taskList.remove(id - 1);
         chooseOption(taskList);
     }
-    private static void readTasksFromJson(List<ToDoTask> taskList) throws IOException {
+    private static void fillTasksFromJson(List<ToDoTask> taskList) throws IOException {
         ObjectMapper mapper = new ObjectMapper();
         String line = null;
         try (FileReader fr = new FileReader("tasks.json"); Scanner readerScanner = new Scanner(fr)){
