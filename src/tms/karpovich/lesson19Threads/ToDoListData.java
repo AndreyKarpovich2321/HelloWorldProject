@@ -19,7 +19,6 @@ public class ToDoListData {
 //                new ToDoTask(4, "06-06-2023", "Pay Bills", "High", "Undone"));
         fillTasksFromJson(taskList);
 
-
     }
 
     private static void chooseOption(List<ToDoTask> taskList) throws JsonProcessingException {
