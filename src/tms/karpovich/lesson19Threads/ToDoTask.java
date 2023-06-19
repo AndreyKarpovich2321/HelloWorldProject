@@ -1,29 +1,23 @@
 package tms.karpovich.lesson19Threads;
 
-import java.time.Month;
-import java.util.Date;
 
-enum Priority{
-    LOW,
-    MEDIUM,
-    HIGH
-}
+
+
 
 public class ToDoTask {
     private int id;
-    private Date date;
-    private String text;
-    private Priority priority;
+    private String completionDate;
+    private String description;
+    private String priority;
     private String status;
-//    Month month = Month.APRIL;
 
     public ToDoTask() {
     }
 
-    public ToDoTask(int id, Date date, String text, Priority priority, String status) {
+    public ToDoTask(int id, String completionDate, String description, String priority, String status) {
         this.id = id;
-        this.date = date;
-        this.text = text;
+        this.completionDate = completionDate;
+        this.description = description;
         this.priority = priority;
         this.status = status;
     }
@@ -36,27 +30,27 @@ public class ToDoTask {
         this.id = id;
     }
 
-    public Date getDate() {
-        return date;
+    public String getCompletionDate() {
+        return completionDate;
     }
 
-    public void setDate(Date date) {
-        this.date = date;
+    public void setCompletionDate(String completionDate) {
+        this.completionDate = completionDate;
     }
 
-    public String getText() {
-        return text;
+    public String getDescription() {
+        return description;
     }
 
-    public void setText(String text) {
-        this.text = text;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
-    public Priority getPriority() {
+    public String getPriority() {
         return priority;
     }
 
-    public void setPriotiry(Priority priority) {
+    public void setPriotiry(String priority) {
         this.priority = priority;
     }
 
@@ -67,4 +61,10 @@ public class ToDoTask {
     public void setStatus(String status) {
         this.status = status;
     }
+
+    @Override
+    public String toString() {
+        return id + " | " + completionDate + " | " + description + " | " + priority + " | " + status;
+    }
 }
+
