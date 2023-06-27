@@ -29,11 +29,12 @@ public class Homework {
     }
 
     private static void deleteStudent(){
+        var name = "";
+        System.out.println("Input student's name you want to delete");
+        name = scanner.next();
         try (Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/main", "root", "msqlsrvrpss")){
             PreparedStatement ps;
-            var name = "";
-            System.out.println("Input student's name you want to delete");
-            name = scanner.next();
+
             ps = connection.prepareStatement("DELETE FROM STUDENTS WHERE NAME = ?");
             ps.setString(1, name);
             ps.execute();
@@ -77,17 +78,18 @@ public class Homework {
         chooseOption();
     }*/
     private static void addStudent() {
+        var name = "";
+        var age = "";
+        var group = "";
+        var city = "";
+        System.out.println("Input student name, age, group and city");
+        name = scanner.next();
+        age = scanner.next();
+        group = scanner.next();
+        city = scanner.next();
         try (Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/main", "root", "msqlsrvrpss")){
             PreparedStatement ps;
-            var name = "";
-            var age = "";
-            var group = "";
-            var city = "";
-            System.out.println("Input student name, age, group and city");
-            name = scanner.next();
-            age = scanner.next();
-            group = scanner.next();
-            city = scanner.next();
+
             ps = connection.prepareStatement("INSERT INTO STUDENTS(NAME, AGE, GROUP_ID) values (?, ?, ?);");
             ps.setString(1, name);
             ps.setString(2, age);
